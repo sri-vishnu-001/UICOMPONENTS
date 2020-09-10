@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rb"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/result_rb"
+        android:text="Result Rating"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_gravity="center"/>
+    <SeekBar
+        style="@style/design"
+        android:id="@+id/sb"
+        android:layout_width="match_parent"
+        android:progress="40"
+        android:max="100"/>
+    <TextView
+        style="@style/design"
+        android:id="@+id/sb_result"
+        android:text="Result seekbar"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimary"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:id="@+id/iv"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_add_location_black_24dp"/>
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ib"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_add_location_black_24dp"/>
+    
+</LinearLayout>
